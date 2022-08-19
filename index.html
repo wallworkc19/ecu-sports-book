@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECU Sports Book</title>
+  </head>
+  <body>
+    <div id="app">
+      {{ greeting }}
+      <input v-model="greeting"/>
+      <hr />
+
+      <div v-if="isVisible" class="box">
+
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script>
+      let app = Vue.createApp({
+        data: function() {
+          return {
+            greeting: 'Send Noodles',
+            isVisible: true
+          }
+        }
+      })
+      app.mount('#app')
+    </script>
+  </body>
+</html>
