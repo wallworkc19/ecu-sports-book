@@ -1,33 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
-  
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ECU Sports Book</title>
-  </head>
-  <body>
-    <div id="app">
-      {{ greeting }}
-      <input v-model="greeting"/>
-      <hr />
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ECU Sports Book</title>
+        <style>
+            .center {
+                text-align: center;
+                margin: auto;
+                padding: 30px;
+            }
+            ul {
+                list-style-type: none;
+                font-size: large;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #cfb53b;
+            }
 
-      <div v-if="isVisible" class="box">
+            li {
+                float: left;
+            }
 
-      </div>
-    </div>
-    <script src="https://unpkg.com/vue@3"></script>
-    <script>
-      let app = Vue.createApp({
-        data: function() {
-          return {
-            greeting: 'Send Noodles',
-            isVisible: true
-          }
-        }
-      })
-      app.mount('#app')
-    </script>
-  </body>
+            li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: #5C5C5C;
+            }
+        </style>
+    </head>
+    <body style="background-color:#7851a9;">
+        <div id="app">
+            <ul>
+                <li><img src="/src/assets/logo.png" alt="ECU logo"style="width:80px;height:45px;"></li>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a  href="/src/html/games.html">Games</a></li>
+                <li><a  href="/src/html/account.html"> {{ result }} </a></li>
+                
+            </ul>
+        </div>
+        
+        <script src="https://unpkg.com/vue@3"></script>
+        <script>
+            let app = Vue.createApp({
+                data: function() {
+                    return {
+                        account: false,
+                        result: "Login/Sign Up"
+                    } 
+                },
+                methods: {
+                    login() {
+                        this.account = !account
+                        result = "Sign Out"
+                    }
+                }
+            })
+            app.mount('#app')
+        </script>
+        <script>
+            window.global = window;
+            var exports = {};
+        </script>
+    </body>
+    <h1 class="center">
+        East Carolina Sports Book
+    </h1>
+    
+    <h2 class="center">
+        Welcome to the ECU Sports book where you can view and "bet" on upcoming 
+        East Carolina University football games.
+        <br>
+        To get started head to the Sign Up page where you begin with 100 points.
+        <br>
+        Good Luck!
+    </h2>
+
 </html>
+
+

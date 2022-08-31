@@ -1,5 +1,18 @@
 <!DOCTYPE html>
-<html>
+
+<html> 
+    <script setup>
+        import { Authenticator } from "@aws-amplify/ui-vue";
+        import "@aws-amplify/ui-vue/styles.css";
+      
+        import { Amplify } from 'aws-amplify';
+        import awsconfig from './aws-exports';
+      
+        Amplify.configure(awsconfig);
+      </script>
+    <script setup>
+        import WelcomeItem from './WelcomeItem.vue'
+    </script>
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" href="/favicon.ico" />
@@ -13,6 +26,7 @@
             }
             ul {
                 list-style-type: none;
+                font-size: large;
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
@@ -39,8 +53,8 @@
     <body style="background-color:#7851a9;">
         <div id="app" v-cloak>
             <ul>
-                <li><img src="logo.png" alt="ECU logo"style="width:75px;height:42px;"></li>
-                <li><a href="/src/html/home.html">Home</a></li>
+                <li><img src="/src/assets/logo.png" alt="ECU logo"style="width:80px;height:45px;"></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="/src/html/games.html">Games</a></li>
                 <li><a class="active" href="/src/html/account.html"> {{ result }} </a></li>
             </ul>
@@ -49,10 +63,16 @@
                     Login
                 </h2>
                 <login-form />
-                
             </div>
         </div>
-        
+        <template>
+            <authenticator>
+              <template v-slot="{ user, signOut }">
+                <h1>Hello {{ user.username }}!</h1>
+                <button @click="signOut">Sign Out</button>
+              </template>
+            </authenticator>
+          </template>
         
         <script src="https://unpkg.com/vue@3"></script>
         <script>
