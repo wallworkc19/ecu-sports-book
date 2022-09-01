@@ -1,20 +1,26 @@
 {
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-ecusportsbook-dev-183327-authRole",
-      "UnauthRoleArn": "arn:aws:iam::178497931120:role/amplify-ecusportsbook-dev-183327-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::178497931120:role/amplify-ecusportsbook-dev-183327-authRole",
-      "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-ecusportsbook-dev-183327-deployment",
-      "UnauthRoleName": "amplify-ecusportsbook-dev-183327-unauthRole",
-      "StackName": "amplify-ecusportsbook-dev-183327",
-      "StackId": "arn:aws:cloudformation:us-east-1:178497931120:stack/amplify-ecusportsbook-dev-183327/9afc9b30-27ea-11ed-b7f4-0af0b29c4fcd",
-      "AmplifyAppId": "d2ynavcp7a9npf"
-    },
-    "categories": {
-      "auth": {
-        "ecusportsbookc040701c": {}
-      }
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-ecusportsbook-dev-183327-authRole",
+            "UnauthRoleArn": "arn:aws:iam::178497931120:role/amplify-ecusportsbook-dev-183327-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::178497931120:role/amplify-ecusportsbook-dev-183327-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-ecusportsbook-dev-183327-deployment",
+            "UnauthRoleName": "amplify-ecusportsbook-dev-183327-unauthRole",
+            "StackName": "amplify-ecusportsbook-dev-183327",
+            "StackId": "arn:aws:cloudformation:us-east-1:178497931120:stack/amplify-ecusportsbook-dev-183327/9afc9b30-27ea-11ed-b7f4-0af0b29c4fcd",
+            "AmplifyAppId": "d2ynavcp7a9npf"
+        },
+        "categories": {
+            "auth": {
+                "ecusportsbookc040701c": {}
+            },
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "d2ynavcp7a9npf",
+                    "type": "cicd"
+                }
+            }
+        }
     }
-  }
 }
