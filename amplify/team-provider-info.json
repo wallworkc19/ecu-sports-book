@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ecusportsbook-dev-180727-authRole",
+      "UnauthRoleArn": "arn:aws:iam::178497931120:role/amplify-ecusportsbook-dev-180727-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::178497931120:role/amplify-ecusportsbook-dev-180727-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-ecusportsbook-dev-180727-deployment",
+      "UnauthRoleName": "amplify-ecusportsbook-dev-180727-unauthRole",
+      "StackName": "amplify-ecusportsbook-dev-180727",
+      "StackId": "arn:aws:cloudformation:us-east-1:178497931120:stack/amplify-ecusportsbook-dev-180727/77f7a580-2a42-11ed-8988-0afe038b15dd",
+      "AmplifyAppId": "d2ynflewse3ird"
+    }
+  }
+}
