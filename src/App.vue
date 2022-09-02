@@ -7,8 +7,7 @@
         <v-toolbar-items>
           <v-btn flat router-link to="/">Home</v-btn>
           <v-btn flat router-link to="/games">Games</v-btn>
-          <v-btn flat router-link to="/signup">Sign Up</v-btn>
-          <v-btn flat router-link to="/login">Login</v-btn>
+          <v-btn flat router-link to="/account">Account</v-btn>
         </v-toolbar-items>
       </v-toolbar>
       

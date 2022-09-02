@@ -15,17 +15,13 @@
           Welcome to East Carolina Sports Book
         </h1>
 
-
         <p class="subheading font-weight-regular">
           This website allows you to look at and "bet" on upcoming ECU football games,
-          <br>head over to the Sign Up page where you will start with 100pts. 
+          <br>head over to the Account page where you will start with 100pts. 
           <br>Good Luck!
           
         </p>
       </v-col>
-
-      
-
       
     </v-row>
   </v-container>
