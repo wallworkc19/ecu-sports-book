@@ -1,30 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/games">Games</router-link>
-  </nav>
-  <router-view/>
+  <v-app>
+    <v-main>
+      <v-toolbar color="#cfb53b">
+        <v-toolbar-title>East Carolina Sports Book</v-toolbar-title>
+        <v-spacer></v-spacer>
+        <v-toolbar-items>
+          <v-btn flat>Games</v-btn>
+          <v-btn flat>Sign Up</v-btn>
+          <v-btn flat>Login</v-btn>
+        </v-toolbar-items>
+      </v-toolbar>
+      <v-content>
+        <HelloWorld/>
+      </v-content>
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import HelloWorld from './components/HelloWorld.vue';
 
-nav {
-  padding: 30px;
+export default {
+    name: "App",
+    data: () => ({
+    //
+    }),
+    components: { HelloWorld }
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+</script>
