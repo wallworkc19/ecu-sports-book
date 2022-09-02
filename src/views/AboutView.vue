@@ -16,7 +16,7 @@
               <td>Home</td>
               <td>NC State</td>
               <td>+2200</td>
-              <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+              <td><input type="number" min="0" id="n0" value="0"> <button>Bet Points</button></td>
             </tr>
             <tr>
                 <td>2</td>
@@ -24,7 +24,7 @@
                 <td>Home</td>
                 <td>Old Dominion</td>
                 <td>50</td>
-                <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+                <td><input type="number" min="0" id="n1" value="0"> <button>Bet Points</button></td>
             </tr>
             <tr>
                 <td>3</td>
@@ -32,7 +32,7 @@
                 <td>Home</td>
                 <td>Campbell</td>
                 <td>50</td>
-                <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+                <td><input type="number" min="0" id="n2" value="0"> <button>Bet Points</button></td>
             </tr>
             <tr>
                 <td>4</td>
@@ -40,7 +40,7 @@
                 <td>Home</td>
                 <td>Navy</td>
                 <td>50</td>
-                <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+                <td><input type="number" min="0" id="n3" value="0"> <button>Bet Points</button></td>
             </tr>
             <tr>
                 <td>5</td>
@@ -48,7 +48,7 @@
                 <td>Away</td>
                 <td>South Florida</td>
                 <td>50</td>
-                <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+                <td><input type="number" min="0" id="n4" value="0"> <button>Bet Points</button></td>
             </tr>
             <tr>
                 <td>6</td>
@@ -56,7 +56,7 @@
                 <td>Away</td>
                 <td>Tulane</td>
                 <td>50</td>
-                <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+                <td><input type="number" min="0" id="n5" value="0"> <button>Bet Points</button></td>
             </tr>
             <tr>
                 <td>7</td>
@@ -64,7 +64,7 @@
                 <td>Home</td>
                 <td>Memphis</td>
                 <td>50</td>
-                <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+                <td><input type="number" min="0" id="n6" value="0"> <button>Bet Points</button></td>
             </tr>
             <tr>
                 <td>8</td>
@@ -72,7 +72,7 @@
                 <td>Home</td>
                 <td>UCF</td>
                 <td>50</td>
-                <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+                <td><input type="number" min="0" id="n7" value="0"> <button>Bet Points</button></td>
             </tr>
             <tr>
                 <td>9</td>
@@ -80,7 +80,7 @@
                 <td>Away</td>
                 <td>BYU</td>
                 <td>50</td>
-                <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+                <td><input type="number" min="0" id="n8" value="0"> <button>Bet Points</button></td>
             </tr>
             <tr>
                 <td>10</td>
@@ -88,7 +88,7 @@
                 <td>Away</td>
                 <td>Cincinnati</td>
                 <td>50</td>
-                <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+                <td><input type="number" min="0" id="n9" value="0"> <button>Bet Points</button></td>
             </tr>
             <tr>
                 <td>11</td>
@@ -96,7 +96,7 @@
                 <td>Home</td>
                 <td>Houston</td>
                 <td>50</td>
-                <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+                <td><input type="number" min="0" id="n10" value="0"> <button>Bet Points</button></td>
             </tr>
             <tr>
                 <td>12</td>
@@ -104,7 +104,7 @@
                 <td>Away</td>
                 <td>Temple</td>
                 <td>50</td>
-                <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+                <td><input type="number" min="0" id="n11" value="0"> <button>Bet Points</button></td>
             </tr>
             <tr>
                 <td>13</td>
@@ -112,36 +112,12 @@
                 <td>Away</td>
                 <td>TBD</td>
                 <td>50</td>
-                <td><input type="number" min="0" id="myNumber" value="0"><button>Bet Points</button></td>
+                <td><input type="number" min="0" id="n12" value="0"> <button>Bet Points</button></td>
             </tr>
         </table>
   </div>
 </template>
 <style>
-  ul {
-      list-style-type: none;
-      font-size: large;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #cfb53b;
-  }
-
-  li {
-      float: left;
-  }
-
-  li a {
-      display: block;
-      color: black;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-  }
-
-  li a:hover {
-      background-color: #5C5C5C;
-  }
   table {
       font-family: arial, sans-serif;
       border-collapse: collapse;
