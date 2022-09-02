@@ -1,0 +1,10 @@
+{
+  "resourceName": "dynamo1e0bf71c",
+  "tableName": "dynamo1e0bf71c",
+  "partitionKey": {
+    "fieldName": "gameNum",
+    "fieldType": "number"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

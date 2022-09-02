@@ -33,5 +33,11 @@
         ]
       }
     }
+  },
+  "storage": {
+    "dynamo1e0bf71c": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation"
+    }
   }
 }
